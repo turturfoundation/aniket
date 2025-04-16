@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtur Foundation</title>
+    <!--font awesome cdn link-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg
+     ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--aos cdn link-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--swiper cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--custom css link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--header section starts-->
+
+    <header class="header">
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"><i class="fa-duotone fa-solid fa-dog"></i>Turtur foundation</a>
+
+        <nav class="navbar">
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">Home</a>
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">About</a>
+            <a data-aos="zoom-in-left" data-aos-delay="750" href="#gallery">Gallery</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1050" href="#donation-section">Donation</a>
+        </nav>
+
+        <div class="icons">
+            <div data-aos="zoom-in-left" data-aos-delay="1350" class='fas fa-moon' id="theme-btn"></div>
+            <div data-aos="zoom-in-left" data-aos-delay="1500" class='fas fa-bars' id="menu"></div>
+        </div>
+
+    </header>
+
+        <!--header section ends-->
+
+
+        <!--home section starts-->
+
+        <section class="home" id="home">
+
+            <div class="content" data-aos="fade-down">
+                <h3>Help Street Dogs<br> street animal protection </h3>
+                <a href="#" class="btn">see more info</a>
+            </div>
+        </section>
+
+
+            <!--home section end-->
+
+            <!--about section starts-->
+
+            <section class="about" id="about">
+                
+                <h1 class="heading"> about us</h1>
+
+                <div class="row">
+
+                    <div class="content" data-aos="fade-up" data-aos-delay="150">
+
+                    
+                    <h3><b>Aimala have no voice.<br>They can't ask for help<br>They can't ask for freedom<br>They can't ask for protection<br>They can't ask for Food</h3>
+                    <br><br><h4>YOU WERE BORN<BR>WITH THE ABILITY<BR>TO CHANGE<BR>SOMEONE'S LIFE,<BR>DON'T EVER<BR>WASTE IT.</b></h4>
+                    <a href="#" class="btn">read more</a>
+                </div>
+
+                <div class="image" data-aos="fade-down" data-aos-delay="300">
+                    <img src="dogs/dog3.jpeg" height="500px" width="400px">
+                </div>
+
+            </div>
+            </section>
+  
+            <!--about section ends-->
+
+            <!--gallery section starts-->
+
+            <section class="gallery" id="gallery">
+
+                <h1 class="heading">Our Gallery</h1>
+
+                <div class="swiper gallery-slider" data-aos="fade-up">
+
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" data-aos="zoom-in">
+                        <img src="" />
+                      </div>
+                      <div class="swiper-slide" data-aos="zoom-in">
+                        <img src="dogs/dog1.jpeg" />
+                      </div>
+                      <div class="swiper-slide" data-aos="zoom-in">
+                        <img src="dogs/dog3.jpeg" />
+                      </div>
+                      <div class="swiper-slide" data-aos="zoom-in">
+                        <img src="dogs/dog2.jpeg" />
+                      </div>
+                      <div class="swiper-slide" data-aos="zoom-in">
+                        <img src="dogs/dog4.jpeg" />
+                      </div>
+                      <div class="swiper-slide" data-aos="zoom-in">
+                        <video src="dogs/dog.mp4" />
+                      </div>
+
+                    </div>
+                  </div>
+
+            </section>
+            <!-- gallery section ends -->
+
+            <!-- contact section starts -->
+
+            <header>
+              <h1>Help Street Dogs</h1>
+              <p>Make a difference with your donation</p>
+            </header>
+          
+            <section class="donation-section" id="donation-section">
+              <div class="donation-box">
+                <h2>Donate via UPI</h2>
+                <img src="dogs/qrcode.jpeg" height="400px" width="360px" alt="Scan QR to Donate" class="qr-code" />
+                <p><strong>UPI ID:</strong> 8178054435@pthdfc</p>
+                <p>Scan the QR code or use the UPI ID above to make a donation.</p>
+              </div>
+            </section>
+          
+            <section class="form-section">
+              <h2>Confirm Your Donation</h2>
+              <form id="donationForm">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <input type="number" id="amount" placeholder="Amount Donated (₹)" required />
+                <button type="submit">Confirm Donation</button>
+                <p id="message"></p>
+              </form>
+            </section>
+          
+            <footer>
+              <p>&copy; 2025 HelpStreetDogs.org | All Rights Reserved</p>
+            </footer>
+
+            <!-- contact sectiom ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+            
+
+
+
+                <!--aos cdn link-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <!--swiperjs cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--custom js cdn link-->
+    <script src="script.js"></script>
+
+</body>
+</html>
