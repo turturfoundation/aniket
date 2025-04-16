@@ -377,7 +377,7 @@ header {
   #message {
     margin-top: 1rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   
   footer {
