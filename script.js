@@ -1,29 +1,25 @@
-let navbar = document.querySelector('.header .navbar');
-let menuBtn = document.querySelector('#menu');
+const themeBtn = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+const body = document.body;
 
-menuBtn.onclick = () =>{
-  menuBtn.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-}
+themeBtn.addEventListener("click", () => {
+  body.classList.toggle("night");
+  body.classList.toggle("day");
 
-window.onscroll = () => {
-  menuBtn.classList.remove('fa-times');
-  navbar.classList.remove('active');
-
-}
-
-let themeBtn = document.querySelector('#theme-btn');
-
-themeBtn.onclick = () =>{
-  themeBtn.classList.toggle('fa-sun');
-
-  if(themeBtn.classList.contains('fa-sun')){
-    document.body.classList.add('active');
+  if (body.classList.contains("night")) {
+    themeIcon.textContent = "🌙";
+  } else {
+    themeIcon.textContent = "🌞";
   }
-  else{
-    document.body.classList.remove('active');
-  }
-}
+});
+
+// Hamburger Menu
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
 
 
 var swiper = new Swiper(".gallery-slider", {
