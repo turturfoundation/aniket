@@ -114,66 +114,102 @@ section{
     box-shadow: var(--box-shadow);
 } 
 
-.header .logo{
-    font-size: 2.2rem;
-    font-weight: bolder;
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
     color: var(--primary-color);
-}
+  }
+  
 
-.header .logo i{
-    color: var(--main-color);
-    padding-right: .5rem;
-}
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    /* color: inherit; */
+    font-size: large;
+    font-weight: 500;
+  }
+  
+  nav ul li a:hover{
+    color: #0056b3;
 
-.header .navbar a{
-    font-size: 1.7rem;
-    margin-left: 2rem;
-    color: var(--primary-color);
-    padding-block: 1.6rem;
-    position: relative;
-}
-
-.header .navbar a:hover{
-    color: var(--main-color);
-}
-
-.header .navbar a::before{
-    content: '';
-    position: absolute;
-    height: .3rem;
-    border-block: .1rem solid var(--main-color);
-    bottom: .5rem;
-    width: 100%;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: .5 ease;
-}
-
-.header .navbar a:is(:hover, :focus)::before{
-    transform: scaleX(1);
-}
-
-.header .icons div{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    font-size: 2rem;
-    border-radius: .5rem;
-    margin-left: .5rem;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #theme-toggle {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
     cursor: pointer;
-    color: var(--primary-color);
-    background: var(--main-color);
-    text-align: center;
-}
-
-.header .icons div:hover{
-    color: var(--main-color);
-    background: var(--primary-color);
-}
-
-#menu{
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
     display: none;
-}
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: inherit;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* Day/Night Themes */
+  .day {
+    background: #fff;
+    color: #222;
+  }
+  
+  .night {
+    background: #121212;
+    color: #f1f1f1;
+  }
+  
+
 
 /* end */
 
